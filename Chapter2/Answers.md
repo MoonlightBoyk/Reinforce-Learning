@@ -10,7 +10,7 @@ The former the rewards, the less the weights. Too obvious to be true.
 
 Ex2.3
 
-The action value would go random walk every 20 steps. The result is shown in figure below made by Ex2.3.py. I omit the first 10 steps since it will always choose the first action which is best at the first step. I add a class named action which is a bad decision since the random walk of actions relies on the tiem in class Bandit. However, I have test the program in the condition of Fig2.2 and get similar results in the book.
+The result is shown in figure below made by Ex2.3.py in which the action value would go random walk every 20 steps independently. As is clearly shown in the chart, the constant stepsize or the expotential recency-weighted average performs much better than the sample average. I omit the first 10 steps since it will always choose the first action which is best at the first step. I add a class named action which is a bad decision since the random walk of actions relies on the tiem in class Bandit. However, I have test the program in the condition of Fig2.2 in the book and get similar results.
 
 ![random walk](Ex2.3.svg)
 
