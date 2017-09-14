@@ -16,3 +16,7 @@ I think these locations vary in trems of the abstract level. The brain decision 
 Ex3.4
 
 The ruturn wuold be ![equation](http://www.sciweavers.org/tex2img.php?eq=%5Cgamma%5Ek&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) , k is the number of time steps before failure. But the continuing formulation will contain other episodes and the k on the exponent in future episodes would take the time step in the former episodes into account. I am confused. Since the rewards would be given after each epsisodes. Why there is a reward associated with each time step in the episodic view?   
+
+Ex3.5
+
+I don't think I have given the effective info to the agent. Say if the maze is simple enough, it will always find a way out by random trials. So the agent gets the reward every time and doesn't need to make any change. It would keep trying randomly and thus show no evidence of learning.
