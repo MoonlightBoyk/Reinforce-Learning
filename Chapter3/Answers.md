@@ -20,3 +20,7 @@ The ruturn wuold be ![equation](http://www.sciweavers.org/tex2img.php?eq=%5Cgamm
 Ex3.5
 
 I don't think I have given the effective info to the agent. Maximize the return doesn't necessarily mean the ability to pass the maze. Say if the maze is simple enough, it will always find a way out by random trials. So the agent gets the reward every time and doesn't need to make any change. It would keep trying randomly and thus show no evidence of learning.
+
+Ex3.6
+
+After seeing the first scene, I, the vision system, don't catch the MArkov state of the environment. Say if the sun lies behind me and I couldn't see it, I'm unable to predict the changes of the light, caused by the rise of the Sun, on the objects I see. Otherwise, if the state is Markov, it's a pretty nice thing since we could just catch a sight of the universe and know all about it. On the other hand, the complete darkness from the broken camera is a Markov state. I know I'm going to spend the day in the endless and frightening darkness. 
