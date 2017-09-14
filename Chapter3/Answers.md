@@ -19,4 +19,4 @@ The ruturn wuold be ![equation](http://www.sciweavers.org/tex2img.php?eq=%5Cgamm
 
 Ex3.5
 
-I don't think I have given the effective info to the agent. Say if the maze is simple enough, it will always find a way out by random trials. So the agent gets the reward every time and doesn't need to make any change. It would keep trying randomly and thus show no evidence of learning.
+I don't think I have given the effective info to the agent. Maximize the return doesn't necessarily mean the ability to pass the maze. Say if the maze is simple enough, it will always find a way out by random trials. So the agent gets the reward every time and doesn't need to make any change. It would keep trying randomly and thus show no evidence of learning.
