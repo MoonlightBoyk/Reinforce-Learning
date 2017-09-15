@@ -24,3 +24,7 @@ I don't think I have given the effective info to the agent. Maximize the return 
 Ex3.6
 
 After seeing the first scene, I, the vision system, don't catch the MArkov state of the environment. Say if the sun lies behind me and I couldn't see it, I'm unable to predict the changes of the light, caused by the rise of the Sun, on the objects I see. Otherwise, if the state is Markov, it's a pretty nice thing since we could just catch a sight of the universe and know all about it. On the other hand, the complete darkness from the broken camera is a Markov state. I know I'm going to spend the day in the endless and frightening darkness. 
+
+Ex3.7
+
+![Ex3.7](Ex3.7.svg)
