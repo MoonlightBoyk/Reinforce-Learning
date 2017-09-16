@@ -1,10 +1,10 @@
 Ex3.1
 
 Dating with girls: How to win her hearts by a series of acitvities.  
-states: My and her free time, My pocket money, relationship with the girl: unknown, acquainted, familiar, close or Girlfriend  
+states: My and her free time, My pocket money, relationship with the girl: unknown, acquainted, familiar, close or Girlfriend, her emotions: happy, sad, calm, angry, worried  
 rewards: kiss +10,  hand in hand +5, smile +1, nice guy -1, smack -5  
 actions: study together, chat, take a lunch, watch a movie, go to an amusement park, travel, send a gift  
-However, I hope so.
+Indeed, I hope so.
 
 Ex3.2
 
@@ -23,7 +23,7 @@ I don't think I have given the effective info to the agent. Maximize the return 
 
 Ex3.6
 
-After seeing the first scene, I, the vision system, don't catch the MArkov state of the environment. Say if the sun lies behind me and I couldn't see it, I'm unable to predict the changes of the light, caused by the rise of the Sun, on the objects I see. Otherwise, if the state is Markov, it's a pretty nice thing since we could just catch a sight of the universe and know all about it. On the other hand, the complete darkness from the broken camera is a Markov state. I know I'm going to spend the day in the endless and frightening darkness. 
+After seeing the first scene, I, the vision system, don't catch the Markov state of the environment. Say if the sun lies behind me and I couldn't see it, I'm unable to predict the changes of the light, caused by the rise of the Sun, on the objects I see. Otherwise, if the state is Markov, it's a pretty nice thing since we could just catch a sight of the universe and know all about it. On the other hand, the complete darkness from the broken camera is a Markov state. I know I'm going to spend the day in the endless and frightening darkness. 
 
 Ex3.7
 
