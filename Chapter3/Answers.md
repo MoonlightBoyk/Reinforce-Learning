@@ -36,4 +36,16 @@ From the account of the problem, we know ![3.8.1](Ex3.8.1.svg) for all four dire
 
 Ex3.9
 
-![Ex3.7](Ex3.9.svg)
+![Ex3.9](Ex3.9.svg)
+
+Ex3.10
+
+It may make a big difference. Say if the agent get an reward -1 every time step in the maze like the case in section 3.2, the agent would then try to minize the time in the maze to maximaize the rewards. When we add 2 to all the rewards in one episode, the agent would spend as much time as it can in the maze since the reward for each time step are positive now. In this case, the sign of the rewards matter rather than the relative values of different states in Ex3.9.
+
+Ex3.11
+
+![Ex3.11](Ex3.11.svg)
+
+Ex3.12
+
+![Ex3.12](Ex3.12.svg)
