@@ -1,0 +1,13 @@
+\documentclass{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\begin{document}
+\thispagestyle{empty}
+\begin{eqnarray*}
+G_t^\prime &=&\sum_{k=0}^{\infty} \gamma^k(R_{t+k+1}+c)\\
+&=& G_t + \sum_{k=0}^{\infty} \gamma^k c \\
+&=& G_t + \frac{c}{1-\gamma} \\
+v_\pi^\prime(s) &=& \mathbb{E}_\pi[G_t + \frac{c}{1-\gamma} | S_t = s] \\
+&=& v_\pi(s) + \frac{c}{1-\gamma} = v_\pi(s) + v_c
+\end{eqnarray*}
+\end{document}
