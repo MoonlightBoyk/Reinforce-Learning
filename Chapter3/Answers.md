@@ -33,3 +33,7 @@ Ex3.8
 
 From the account of the problem, we know ![3.8.1](Ex3.8.1.svg) for all four directions and r=0. So ![3.8.2](Ex3.8.2.svg). The Bellman equation holds for the center state.
 
+
+Ex3.9
+
+![Ex3.7](Ex3.9.svg)
