@@ -15,7 +15,7 @@ I think these locations vary in trems of the abstract level. The brain decision 
 
 Ex3.4
 
-The ruturn wuold be ![equation](Ex3.4.svg) , k is the number of time steps before failure. But the continuing formulation will contain other episodes and the k on the exponent in future episodes would take the time step in the former episodes into account. I am confused. Since the rewards would be given after each episode. Why there is a reward associated with each time step in the episodic view?   
+The ruturn wuold be ![Ex3.4](Ex3.4.svg) , k is the number of time steps before failure. But the continuing formulation will contain other episodes and the k on the exponent in future episodes would take the time step in the former episodes into account. I am confused. Since the rewards would be given after each episode. Why there is a reward associated with each time step in the episodic view?   
 
 Ex3.5
 
@@ -28,3 +28,8 @@ After seeing the first scene, I, the vision system, don't catch the Markov state
 Ex3.7
 
 ![Ex3.7](Ex3.7.svg)
+
+Ex3.8
+
+From the account of the problem, we know ![3.8.1](Ex3.8.1.svg) for all four directions and r=0. So ![3.8.2](Ex3.8.2.svg). The Bellman equation holds for the center state.
+
