@@ -1,12 +1,17 @@
 Ex3.1
 
 The carnot engine: how to achieve the maximum efficiency of converting heat from two huge reservoirs in different but constant temperatures into work with some ideal gases?
-states: Volume and Pressure of the ideal gas PV=RT
-rewrads: the ratio of the heat converted to useful work after completing a cycle
-actions: isothermal expansion or contraction under high or low temperature, adiabatic expansion or compression, isobaric process
+states: Volume and Pressure of the ideal gas PV=RT  
+rewrads: the ratio of the heat converted to useful work after completing a cycle  
+actions: isothermal expansion or contraction under high or low temperature, adiabatic expansion or compression, isobaric processes  
+
+Learning english: how to learn english well? The actions need to accumulate to stimulate an essential rise of your english level. So the process is nonMarkov. And the states and rewards could use the same thing.
+states: TOEFL score
+rewards: TOEFL score
+actions: read, listen, speak, write with materials on differnet levels or do nothing
 
 Dating with girls: How to win her hearts by a series of acitvities.  
-states: My and her free time, My pocket money, relationship with the girl: unknown, acquainted, familiar, close or Girlfriend, her emotions: happy, sad, calm, angry, worried  
+states: My and her free time, My pocket money, relationship with the girl: unknown, acquainted, familiar, close or Girlfriend, her emotions: happy, sad, calm, angry, worried and other various subjective emotional states  
 rewards: kiss +10,  hand in hand +5, smile +1, nice guy -1, smack -5  
 actions: study together, chat, take a lunch, watch a movie, go to an amusement park, travel, send a gift  
 Indeed, I hope so.
