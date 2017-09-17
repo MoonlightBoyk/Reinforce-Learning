@@ -1,0 +1,12 @@
+\documentclass{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\begin{document}
+\thispagestyle{empty}
+\begin{eqnarray*}
+q_{\pi}(s,a) &=& \mathbb{E}_{\pi} [G_t|S_t=s,A_t=a] \\
+&=& \mathbb{E}_\pi[R_{t+1}+\gamma\sum_{k=0}^{\infty}\gamma^kR_{t+k+2}|S_t=s,A_t=a]\\
+&=& \sum_{s^{'},r} p(s^{'},r|s,a) \sum_{a^{'}}\pi(a^{'}|s^{'}) \Big[ r+\gamma\mathbb{E}_{\pi}[\sum_{k=0}^{\infty}\gamma^kR_{t+k+2}|S_{t+1}=s^{'},A_{t+1}=a^{'}] \Big]\\
+&=& \sum_{s^{'},r} p(s^{'},r|s,a) \sum_{a^{'}}\pi(a^{'}|s^{'}) \Big[ r+\gamma \ q_{\pi}(s^{'},a^{'})\Big]
+\end{eqnarray*}
+\end{document}

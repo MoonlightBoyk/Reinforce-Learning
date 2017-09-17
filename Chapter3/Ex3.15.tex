@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\begin{document}
+\thispagestyle{empty}
+\begin{displaymath}
+\begin{array}{c}
+
+q_*(h,s)=\alpha \ [r_s + \gamma \ \max
+\left\{ \begin{array}{c}
+q_*(h,s) \\
+q_*(h,w) \\
+\end{array} \right\}
+]+
+(1-\alpha) \ [r_s + \gamma \ \max
+\left\{ \begin{array}{c}
+q_*(l,s) \\
+q_*(l,w) \\
+q_*(l,re) \\
+\end{array} \right\}
+]\\
+
+q_*(h,w)=r_w + \gamma \ \max
+\left\{ \begin{array}{c}
+q_*(h,s) \\
+q_*(h,w) \\
+\end{array} \right\} \\
+
+q_*(l,s)=\beta \ [r_s + \gamma \ \max
+\left\{ \begin{array}{c}
+q_*(l,s) \\
+q_*(l,w) \\
+q_*(l,re) \\
+\end{array} \right\}
+]+
+(1-\beta) \ [-3 + \gamma \ \max
+\left\{ \begin{array}{c}
+q_*(h,s) \\
+q_*(h,w) \\
+\end{array} \right\}
+]\\
+
+
+q_*(l,w)=r_w + \gamma \ \max
+\left\{ \begin{array}{c}
+q_*(l,s) \\
+q_*(l,w) \\
+q_*(l,re) \\
+\end{array} \right\} \\
+
+
+q_*(l,re)=\gamma \ \max
+\left\{ \begin{array}{c}
+q_*(h,s) \\
+q_*(h,w) \\
+\end{array} \right\} \\
+
+\end{array}
+\end{displaymath}
+\end{document}
