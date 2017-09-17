@@ -58,3 +58,6 @@ Ex3.14
 
 With a stroke of the putter, we could reach the hole on the green, so the green area composes the -1 region. Since the putter is more accurate, the second counter we will use the putter as well. The -2 counter is that in Fig3.6 above. If we have three strkes, we would use the driver in the middle step to go as far as possible. So -3 counter looks like the -5 one in Fig 3.6 above. But the boundary doesn't locate behind the tee. We need another stroke of the driver to expand the region with expected return -4.
 
+Ex3.15
+
+![Ex3.15](Ex3.15.svg)
