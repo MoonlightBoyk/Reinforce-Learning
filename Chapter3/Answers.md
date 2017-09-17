@@ -49,3 +49,12 @@ Ex3.11
 Ex3.12
 
 ![Ex3.12](Ex3.12.svg)
+
+Ex3.13
+
+We could reach the hole within one shot on the green. So the green forms the -1 contour. If we have two strokes, we could first play with the driver and then the putter to reach the possily farest boundry of the -2 counter like the -2 boundary in Fig 3.6 below. In the -2 counter shown in Fig3.6 above, we could either use the putter or the driver. Now we have three strokes, we could include the tee now with another stoke by the driver. So the -3 contout would assemble the -3conuter in Fig3.6 below.
+
+Ex3.14
+
+With a stroke of the putter, we could reach the hole on the green, so the green area composes the -1 region. Since the putter is more accurate, the second counter we will use the putter as well. The -2 counter is that in Fig3.6 above. If we have three strkes, we would use the driver in the middle step to go as far as possible. So -3 counter looks like the -5 one in Fig 3.6 above. But the boundary doesn't locate behind the tee. We need another stroke of the driver to expand the region with expected return -4.
+
