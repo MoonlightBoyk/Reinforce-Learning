@@ -1,5 +1,10 @@
 Ex3.1
 
+The carnot engine: how to achieve the maximum efficiency of converting heat from two huge reservoirs in different but constant temperatures into work with some ideal gases?
+states: Volume and Pressure of the ideal gas PV=RT
+rewrads: the ratio of the heat converted to useful work after completing a cycle
+actions: isothermal expansion or contraction under high or low temperature, adiabatic expansion or compression, isobaric process
+
 Dating with girls: How to win her hearts by a series of acitvities.  
 states: My and her free time, My pocket money, relationship with the girl: unknown, acquainted, familiar, close or Girlfriend, her emotions: happy, sad, calm, angry, worried  
 rewards: kiss +10,  hand in hand +5, smile +1, nice guy -1, smack -5  
@@ -7,6 +12,8 @@ actions: study together, chat, take a lunch, watch a movie, go to an amusement p
 Indeed, I hope so.
 
 Ex3.2
+
+It is hard for me to think of a case in point. If you couldn't get any response from the environment or the response couldn't be used to determine whether the actions is good or not, it would be quite hard to achieve the goal.
 
 Ex3.3
 
@@ -61,3 +68,7 @@ With a stroke of the putter, we could reach the hole on the green, so the green 
 Ex3.15
 
 ![Ex3.15](Ex3.15.svg)
+
+Ex3.16
+
+According to the best policy, the agent should move directly towards A from A'. Since there is no rewards along the way, after four upward actions, we get ![Ex3.16](Ex3.16.svg) is the Bellman optimality equation for the site A. So the optimal value of the best state is 24.419.
