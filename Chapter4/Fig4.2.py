@@ -24,10 +24,10 @@ class Rental(object):
         self.credit = 10  # rewards for renting one car
         self.cost = -2  # cost for moving a car
         self.discount = 0.9
-        self.max_move = 5  # maximum of moving cars
-        self.actions = [_ for _ in range(0, self.max_move + 1)]
+        self.max_move = 3  # maximum of moving cars
+        self.actions = [_ for _ in range(-self.max_move, self.max_move + 1)]
         # values of action state pairs
-        self.value_action = np.zeros((self.max_cars[0] + 1, self.max_cars[1] + 1, self.max_move + 1))
+        self.value_action = np.zeros((self.max_cars[0] + 1, self.max_cars[1] + 1, 2 * self.max_move + 1))
         self.value_state = np.zeros((self.max_cars[0] + 1, self.max_cars[1] + 1))  # value of states
         # record all states
         self.states = np.array([_ for _ in itertools.product(range(0, self.max_cars[0] + 1), range(0, self.max_cars[1] + 1))])
@@ -73,7 +73,7 @@ class Rental(object):
                         probability_final[i] *= (1 - np.sum([possion(_, self.returns[i]) for _ in range(0, self.max_cars[i] - car_numbers_rent[i])]))
 
                 next_states.append(car_numbers_return)
-                rewards.append(self.cost * action + np.sum(rents) * self.credit)
+                rewards.append(self.cost * abs(action) + np.sum(rents) * self.credit)
                 probabilities.append(probability_final[0] * probability_final[1])
         return np.array(next_states), np.array(rewards), np.array(probabilities)
 
@@ -91,7 +91,6 @@ class Rental(object):
                     next_values = np.append(next_values, self.value_state[state[0], state[1]])
 
                 new_values[i, j] = np.sum(probabilities * (rewards + self.discount * next_values))
-                print(i, j)
 
             print('*', np.sum(np.abs(new_values - self.value_state)))
             if np.sum(np.abs(new_values - self.value_state)) < eps:
@@ -103,20 +102,21 @@ class Rental(object):
         # evaluate value of state actions pair
         for i, j in self.states:
             for action in self.actions:
-                if (action > 0 and i >= action) or (action < 0 and j >= abs(action)):
+                if (action >= 0 and i >= action) or (action < 0 and j >= abs(action)):
                     next_states, rewards, probabilities = self.decide([i, j], action)
                     next_values = np.array([])
                     for state in next_states:
                         next_values = np.append(next_values, self.value_state[state[0], state[1]])
 
-                    self.value_action[i, j, action] = np.sum(probabilities * (rewards + self.discount * next_values))
+                    self.value_action[i, j, action + self.max_move] = np.sum(probabilities * (rewards + self.discount * next_values))
                 else:
-                    # use inf negative rewards to exclude this choice
-                    self.value_action[i, j, action] = -float('inf')
-        print('*****************')
+                    # use inf negative rewards to exclude this choice and correspond to the order
+                    self.value_action[i, j, action + self.max_move] = -float('inf')
+            print(self.value_action[i, j])
         print('evaluate')
+        print('*****************')
 
-        return self.value_action
+        return self.value_state, self.value_action
 
 
 def possion(n, lam):
@@ -135,10 +135,13 @@ class Agent(object):
         """Imporve policy"""
         while True:
             new_policy = np.zeros((self.task.max_cars[0] + 1, self.task.max_cars[1] + 1), int)
-            value_state = self.task.evaluate(self.policy, eps=1)
+            value_state, value_action = self.task.evaluate(self.policy, eps=1e-3)
 
             for i, j in self.task.states:
-                new_policy[i, j] = np.argmax(value_state[i, j])
+                # action index is not action due to negative values
+                best_action = np.argmax(value_action[i, j])
+                new_policy[i, j] = self.task.actions[best_action]
+                print([i, j], value_action[i, j], best_action, self.policy[i, j])
 
             policy_change = np.sum(new_policy != self.policy)
             print(policy_change, 'states changed')
@@ -147,12 +150,13 @@ class Agent(object):
                 break
 
             self.policy = new_policy
-        return self.policy, self.task.value_state
+        return self.policy, value_state
 
 
-rental = Rental([10, 10], [1.5, 1.5], [2, 1])
+rental = Rental([10, 10], [1.5, 2], [1.5, 1])
 agent = Agent(rental)
 policy, state_value = agent.improve()
+print(policy)
 AxisXPrint = []
 AxisYPrint = []
 for i in range(0, 11):
@@ -180,3 +184,4 @@ plt.show()
 # error: nonsensitive to variables which should be initialized every time in the loop
 # especially when variables in conditions change in loops.
 # write a little and test a little, use simple examples to get fast response
+# Being familiar with problem means variable formats appear when writing about them
