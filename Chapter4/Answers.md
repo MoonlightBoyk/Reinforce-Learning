@@ -10,3 +10,7 @@ Well, after solving the vlue functions with Ex4.2.py, I find the  value of the n
 Ex4.3
 
 ![Ex4.3](Ex4.3.svg)
+
+Ex4.5
+
+![Ex4.5](Ex4.5.svg)
