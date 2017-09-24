@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\begin{document}
+\thispagestyle{empty}
+
+\begin{enumerate}
+\item Initialization \\
+$V(s) \ \in \ \mathbb{R}$ and $\pi(s) \ \in \ \mathcal{A}(s)$ arbitrarily for all $s \ \in \ \mathcal{S} $
+\item Polcy Evaluation \\
+Repeat \\
+$\Delta \leftarrow 0$\\
+For each $s \ \in \mathcal{S}, \ a \in \mathcal{A}$\\
+$q \leftarrow q(s,a)$ \\
+$q(s,a) \leftarrow \sum_{s^\prime,a}p(s^\prime,r|s,a)[r+\gamma q(s^\prime,\pi(s^\prime))]$\\
+$\Delta \leftarrow max(\Delta, |q-q(s,a)|)$ \\
+until $\Delta < \theta$
+\item Policy Improvement\\
+$policy\!-\!stable \leftarrow true$\\
+For each $s \in \mathcal{S}$\\
+$old\!-\!action \leftarrow \pi(s)$\\
+$\pi(s) \leftarrow argmax_a q(s,a)$\\
+If $old\!-\!action  \not = \pi(s)$, then $policy\!-\!stable \leftarrow false$\\
+If $policy\!-\!stable$, then stop and return $q\approx q_*$; else go to 2
+
+\end{enumerate}
+
+\end{document}
