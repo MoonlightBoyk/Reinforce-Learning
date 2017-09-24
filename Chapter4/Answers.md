@@ -14,3 +14,9 @@ Ex4.3
 Ex4.5
 
 ![Ex4.5](Ex4.5.svg)
+
+Ex4.6
+
+Policy improvement: Now, the policy is stochastic and now the action with biggest possible reward should be given the as high probability as possible. And two policy are equal if they have the same probabilities for all actions in all states.  
+Policy evaluation: Now the update rule should take the stochastic property of next states into account.  
+Initialization: The policy for every state may be initalized as equal probabilities for each actions.
