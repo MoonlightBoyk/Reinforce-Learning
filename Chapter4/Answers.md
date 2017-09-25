@@ -14,6 +14,7 @@ Ex4.3
 Ex4.4
 
 After running for over 36 hours to solve the full problem, I found I set the max moving cars could 3 rather than 5 unfortunately. I cut the numbers in half due to my own fault. The problem is being solved with a much faster speed now. The program ends within 15 mins. There is something ambigous in the car rental. The car moved by the employee should not be counted in your moving cars But she helps you save $2 so this cars should count but have no expense. In the program, it is counted in my moving cars. The optiaml policy is shown in tables below. The row index is the car numbers in first location and the column index is the cars numbers in second location. The number on a specific location is the action for that specific state. The actions change its sign in the right down corner due to the competition between the less cost to move th car from the first location to the second due to the kind hearted employee and the less expected parking fee in second location since the expected return is smaller than the expected rented cars.  
+
 0 |0 |0 |0 |-1 |-1 |-2 |-2 |-2 |-2 |-2   
 -- |-- |-- |-- |-- |-- |-- |-- |-- |-- |--   
 1 |0 |0 |0 |0 |-1 |-1 |-2 |-2 |-2 |-2   
