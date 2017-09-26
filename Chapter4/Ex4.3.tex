@@ -1,0 +1,11 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\begin{document}
+\thispagestyle{empty}
+\begin{eqnarray*}
+q_\pi(s, a) &=& \mathbb{E}_\pi[R_{t+1}+\gamma q_\pi(S_{t+1}, A_{t+1})|S_t=s, A_t=a] \\
+&=& \sum_{s^\prime, r} p(s^\prime, r|s,a) \sum_{a^\prime} \pi(a^\prime|s^\prime) [r+\gamma q_\pi(s^\prime, a^\prime)] \\
+q_{k+1}(s, a) &=& \sum_{s^\prime, r} p(s^\prime, r|s,a) \sum_{a^\prime} \pi(a^\prime|s^\prime) [r+\gamma q_k(s^\prime, a^\prime)]
+\end{eqnarray*}
+\end{document}
